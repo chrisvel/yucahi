@@ -11,6 +11,8 @@ db    db db    db  .o88b.  .d8b.  db   db d888888b v0.1
 
 `yucahi` is a WiFi scanner that shows probes and beacons around.
 
+__The main goal is to show the networks the device has previously connected and as a result reveal the history of the places the user has connected and been to.__
+
 It shows the MAC address, vendor of network interface card, ESSID and calculates estimated distance with channel modulation and signal power. Interface turns to mode monitor automatically.
 
 yucahi also organizes, uses colored output and sorts probes by time passed since last seen device.
