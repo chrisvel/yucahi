@@ -9,7 +9,27 @@ db    db db    db  .o88b.  .d8b.  db   db d888888b v0.1
    YP    ~Y8888P'  `Y88P' YP   YP YP   YP Y888888P
 ```
 
-`yucahi` is a WiFi scanner for probes and beacons.
+`yucahi` is a WiFi scanner that shows probes and beacons around.
+
+It shows the MAC address, vendor of network interface card, ESSID and calculates estimated distance with channel modulation and signal power. Interface turns to mode monitor automatically.
+
+yucahi also organizes, uses colored output and sorts probes by time passed since last seen device.
+
+It also offers a channel hopper that you can control (in seconds).
+
+Finally, the information gathered is exported in JSON format for importing it with any front-end framework and displaying it in real time on an html page or adding it to any log aggregator (e.g. fluentd, logstash etc.)
+
+### Current status
+
+_* In development_
+
+My biggest goal is to make it in a future Kali Linux release as a Wifi Pentesting standard tool.
+
+### Roadmap
+
+- [TODO]: Make installation easier
+- [TODO]: Replace repeating code
+- [TODO]: Add tests
 
 ### Dependencies
 - python 2.7
@@ -23,7 +43,11 @@ db    db db    db  .o88b.  .d8b.  db   db d888888b v0.1
 ### How to run
 `yucahi` can scan networks with CIDR or single IP Addresses:
 
-`sudo python2 wifi-probe-collector.py wlp0s20u1`
+`sudo python2 yucahi.py wlp0s20u1`
+
+### Screenshots
+
+![Screenshot Running Command](/screenshots/yucahi_1.png?raw=true "ss1")
 
 ### License
 
